@@ -10,20 +10,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js" integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <title>Vue umail list</title>
+    <title>Vue Email list</title>
 </head>
 <body>
 
     <div id="app">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-6 mt-5">
-                    <h1 class="text-center"> Emails list</h1>
-                    <ol class="mt-3">
-                        <li v-for="(index) in email">
-                            {{ index }}
-                        </li>
-                    </ol>
+                <div class="col-8 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title fw-bold">Email list</h1>
+                        </div>
+                        <ol class="list-group list-group-flush list-group-numbered">
+                            <li v-for="(index) in email" class="list-group-item">{{ index }}</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
